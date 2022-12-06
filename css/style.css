@@ -79,6 +79,12 @@ h1 {
   padding: 5px
 }
 
+h2 {
+  text-align: center;
+  color: limegreen;
+  padding: 5px
+}
+
 p {
   color: lightgrey;
 }
