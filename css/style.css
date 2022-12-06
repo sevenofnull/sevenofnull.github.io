@@ -45,6 +45,7 @@ article {
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
+  width: 600px;
   background-color: black;
   margin: 5px;
   padding: 5px;
