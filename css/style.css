@@ -22,8 +22,8 @@ header {
 section {
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
   
 nav {
@@ -45,16 +45,13 @@ article {
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   background-color: black;
   margin: 5px;
   padding: 5px;
   color: limegreen;
   border: 1px solid limegreen;
-}
-
-section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
