@@ -60,12 +60,6 @@ article {
   }
 }
 
-@media only screen and (min-width: 601px) {
-  nav {
-    display: block;
-  }
-}
-
 body {
   background-color: black;
 }
