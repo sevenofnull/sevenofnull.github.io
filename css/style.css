@@ -24,8 +24,6 @@ section {
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
 }
   
 nav {
@@ -46,6 +44,8 @@ nav ul {
 article {
   -webkit-flex: 2;
   -ms-flex: 2;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
   flex: 2;
   background-color: black;
   margin: 5px;
