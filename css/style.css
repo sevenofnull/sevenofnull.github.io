@@ -1,93 +1,88 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 }
-  
+
 header {
-  background-image: url("../image/header.png");
-  background-color: black;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: center;
-  height: 250px;
-  padding: 5px;
-  text-align: center;
-  font-size: 35px;
-  color: limegreen;
+background-color: #202020;
+height: 10px;
+padding: 5px;
+text-align: center;
+font-size: 35px;
+color: limegreen;
 }
 
 section {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+display: -webkit-flex;
+display: flex;
 }
-  
+
 nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  max-width: 200px;
-  background: black;
-  padding: 5px;
+max-width: 250px;
+background: #202020;
+padding: 5px;
 }
-  
+
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  color: limegreen;
+list-style-type: none;
+padding: 0;
+color: limegreen;
 }
-  
-article {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+
+articlesection {
   flex: 2;
-  background-color: black;
-  margin: 5px;
+  background-color:#202020;
   padding: 5px;
-  color: limegreen;
-  border: 1px solid limegreen;
+}
+
+
+article {
+background-color: #303030;
+margin: 15px;
+padding: 5px;
+color: limegreen;
+border: 1px solid limegreen;
 }
 
 @media (max-width: 600px) {
-  nav {
-    display: block;
-  }
+  section {
+    -ms-flex-flow: column;
+    flex-flow: column;
+  } 
 }
 
 body {
-  background-color: black;
+background-color: #202020;
 }
 
 a:link {
-  color: limegreen;
+color: limegreen;
 }
 
 a:visited {
-  color: #ff00ff;
+color: #ff00ff;
 }
 
 a:active {
-  color: lightgrey;
+color: lightgrey;
 } 
 
 h1 {
-  text-align: center;
-  color: limegreen;
-  padding: 5px
+text-align: center;
+color: limegreen;
+padding: 5px
 }
 
 h2 {
-  text-align: center;
-  color: limegreen;
-  padding: 5px
+text-align: center;
+color: limegreen;
+padding: 5px
 }
 
 p {
-  color: lightgrey;
+color: lightgrey;
 }
