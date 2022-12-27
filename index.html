@@ -26,6 +26,7 @@
           <br>
           <li>process:</li>
           <li><a href="#process-investigation-phish-pre">--> phishing investigation readme</a></li>
+          <li><a href="#process-investigation-phish-part0">--> phishing investigation part 0</a></li>
           <li><a href="#process-investigation-phish-part1">--> phishing investigation part 1</a></li>
           <br>
           <li>technology:</li>
@@ -34,7 +35,8 @@
           <li><a href="#tail">-> tail</a></li>
           <br>
           <br>
-          <li><a href="https://sevenofnull.github.io/LICENSE" target="_blank">-> license (GPL v3)</a></li>
+          <li><a href="#disclaimer">-> disclaimer</a></li>
+          <li><a href="https://sevenofnull.github.io/LICENSE" target="_blank">-> license (gpl v3)</a></li>
         </ul>
       </nav>
       <articlesection>
@@ -51,20 +53,49 @@
           <br>
           <p>i hope you will find something useful here.</p>
           <p>if you have improvements or topics, i would be happy to hear from you.</p>
+          <br>
         </article>
         <article id="process-investigation-phish-pre">
-          <p style="text-align:right">created 2022-12-17</p>
+          <p style="text-align:right">created 2022-12-27</p>
           <h2>!!! attention attention !!! --> phishing investigation readme <-- !!! attention attention !!!</h2>
-          <p>please read this carefully and do not forget them. </p>
-          <p>it can help you to understand potential issues an </p>
-          <p>work in progress </p>
-          <p style="text-align:left"><a href="#head">head</a></p>
+          <p>please read this carefully!</p>
+          <p>it can help you to understand potential pitfallfs... </p>
+          <br>
+          <p>first :</p>
+          <p>--> do not click at the links pointing to the potential phishing site, without modification.</p>
+          <p>second :</p>
+          <p>--> do not post any link to online forensic tools, without modification.</p>
+          <p>third :</p>
+          <p>--> do not open attachments at your "office" devices. please use a foresic box. </p>
+          <p>fourth :</p>
+          <p>--> do not upload attachments to online forensic tools, without verification that the content is not confidential. </p>
+          <br>
+          <p>i know, should be obvious. if you look at online forensic tools, you will find email addresses exposed.</p>
+          <p style="text-align:right"><a href="#head">head</a></p>
+        </article>
+        <article id="process-investigation-phish-part0">
+          <p style="text-align:right">created 2022-12-27</p>
+          <h2>how to investigate a phishing email part 0</h2>
+          <center>how do you get phishing emails into your "soc" inbox</center>
+          <p>option number one: </p>
+          <p>--> the user is reporting the potential phishing email manually. please ensure that the potential phishing emails is forwared as attacment. for investigation purpose it is nice to have the headers. </p>
+          <p>option number two: </p>
+          <p>--> some email programs allow plugins/addins. you can write your own plugin/addin, which forwards the potential phishing email as attackement to the soc inbox. (and if you are running a siem, you may also want to have an event triggered, that a potential phishing email is in your soc inbox.)</p>
+          <p>option number three: </p>
+          <p>--> you have purchased option number two (just ensure you can reroute the traffic to your soc inbox and are not forced to use an other portal.)</p>
+          <p>option number four: </p>
+          <p>--> you are an office365 customer and have the correct license purchased. (do not forget to put the transportation rules in place and point them to the soc inbox. otherwise those will be reported to ms directly.</p>
+          <br>
+          <p>ok, now you got a potential phishing email in your soc inbox.</p>
+          <p>let's split the investigation into four parts.</p>
+          <img src="image/phishing-investigation.png" alt="" style="width:800px">
+          <p style="text-align:right"><a href="#head">head</a></p>
         </article>
         <article id="process-investigation-phish-part1">
-          <p style="text-align:right">created 2022-12-17</p>
-          <h2>how to do i get phishing emails part 1</h2>
-          <p>work in progress </p>
-          <p style="text-align:left"><a href="#head">head</a></p>
+          <p style="text-align:right">created 2022-12-xx</p>
+          <h2>how to investigate a phishing email part 1</h2>
+          <p>work in progess</p>
+          <p style="text-align:right"><a href="#head">head</a></p>
         </article>
         <article id="technology-spf">
           <p style="text-align:right">created 2022-12-17</p>
@@ -78,11 +109,18 @@
           <p> - once the spf record is added, any time someone receives an email from your domain, their mail server will check the spf record to see if the server that sent the email is allowed to send email on your domain's behalf. if the server is not on the list, the email may be marked as spam or rejected. </p>
           <p> - you can also specify in the spf record whether you want to allow third-party servers to send email on your domain's behalf, or whether you want to strictly limit it to your own servers. this is known as the "policy" for your spf record. </p>
           <p> - it's important to regularly review and update your spf record to make sure it accurately reflects the servers that are allowed to send email on your domain's behalf. this will help ensure that your emails are delivered successfully and are not marked as spam. </p>
-          <p style="text-align:left"><a href="#head">head</a></p>
+          <p style="text-align:right"><a href="#head">head</a></p>
         </article>
         <article id="tail">
           <p>this is the end and thanks for the fish!</p>
-          <p style="text-align:left"><a href="#head">head</a></p>
+          <p style="text-align:right"><a href="#head">head</a></p>
+        </article>
+        <article id="disclaimer">
+          <p style="text-align:right">created 2022-12-27</p>
+          <h2>disclaimer, things on top of the license</h2>
+          <p> - just to say, i do not receive any money or whatever from any vendor, which product i mention in my articels.</p>
+          <p> - all process are my own opinion.</p>
+          <p style="text-align:right"><a href="#head">head</a></p>
         </article>
       </articlesection>
     </section>
